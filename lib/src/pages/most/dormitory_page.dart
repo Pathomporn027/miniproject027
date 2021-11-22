@@ -105,7 +105,7 @@ class _DmPageState extends State<DmPage> {
                             child: Column(
                               children: [
                                 Container(
-                                  color: Colors.teal.shade50,
+                                  color: Colors.white,
                                   child: ListTile(
                                     title: Column(
                                       children: [

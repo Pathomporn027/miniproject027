@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miniproject/src/configs/app_route.dart';
 
 class MySignUpPage extends StatefulWidget {
   MySignUpPage({Key key}) : super(key: key);
@@ -12,7 +13,7 @@ class _MySignUpPageState extends State<MySignUpPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue.shade400,
+        backgroundColor: Colors.lightGreen.shade400,
         title: Text('สมัครสมาชิก'),
       ),
       body: SingleChildScrollView(
@@ -46,15 +47,14 @@ class _MySignUpPageState extends State<MySignUpPage> {
                       labelText: 'รหัสผ่าน',
                     ),
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 20),
                   ElevatedButton(
                     child: Text('ลงทะเบียน'),
-                    // onPressed: (){
-                    //
-                    // },
+                    onPressed: (){
+                    },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.red,
-                      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                      padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
                       textStyle: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold
@@ -64,18 +64,19 @@ class _MySignUpPageState extends State<MySignUpPage> {
                   SizedBox(height: 10),
                   ElevatedButton(
                     child: Text('เข้าสู่ระบบ'),
-                    // onPressed: (){
-                    //
-                    // },
+                    onPressed: (){
+                      Navigator.pushNamed(context, AppRoute.homeRoute);
+                    },
                     style: ElevatedButton.styleFrom(
                       primary: Color(0XFFF8bc34a),
-                      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                      padding: EdgeInsets.symmetric(horizontal: 40, vertical: 10),
                       textStyle: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold
                       ),
                     ),
                   ),
+                  SizedBox(height: 20),
                 ],
               ),
             ),

@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
       "description":
       " ",
       "price": "\$9,000",
-      "page": "login"
+      "page": " "
     },
     {
       "img":
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
       "description":
       " ",
       "price": " ",
-      "page": "info"
+      "page": " "
     },
     {
       "img":
@@ -48,8 +48,8 @@ class _HomePageState extends State<HomePage> {
       "title": "DCondo Hatyai",
       "description":
       " ",
-      "price": " ",
-      "page": "upcoming"
+      "price": "\$10,000 ",
+      "page": " "
     },
   ];
   @override
@@ -229,7 +229,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 GestureDetector(
                   onTap: (){
-                    //Navigator.pushNamed(context, AppRoute.condodetailRoute);
+                    Navigator.pushNamed(context, AppRoute.dormRoute);
                   },
                   child: Container(
                     width: 80,
@@ -242,7 +242,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       image: DecorationImage(
-                          image: AssetImage('assets/images/dm03.png'), scale: 10),
+                          image: AssetImage('assets/images/domitory.jpg'), scale: 4),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
@@ -257,7 +257,7 @@ class _HomePageState extends State<HomePage> {
                   },
                   child: GestureDetector(
                     onTap: (){
-
+                      Navigator.pushNamed(context, AppRoute.roomaddRoute);
                     },
                     child: Container(
                       width: 80,
@@ -270,8 +270,8 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                         image: DecorationImage(
-                            image: AssetImage('assets/images/qr-scans.png'),
-                            scale: 10),
+                            image: AssetImage('assets/images/addroom.jpg'),scale: 4),
+
                       ),
                     ),
                   ),
@@ -283,6 +283,7 @@ class _HomePageState extends State<HomePage> {
                   },
                   child: GestureDetector(
                     onTap: (){
+                      Navigator.pushNamed(context, AppRoute.LoginRoute);
 
                     },
                     child: Container(
@@ -296,8 +297,8 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                         image: DecorationImage(
-                            image: AssetImage('assets/images/earthquake.jpg'),
-                            scale: 10),
+                            image: AssetImage('assets/images/logout.jpg'),
+                            scale: 1),
                       ),
                     ),
                   ),

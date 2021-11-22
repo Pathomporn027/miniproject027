@@ -110,7 +110,7 @@ class _CondoPageState extends State<CondoPage> {
                             SizedBox(height: 20,),
                             Card(
                               child: Container(
-                                color: Colors.teal.shade50,
+                                color: Colors.white,
                                 child: ListTile(
                                   title: Column(
                                     children: [
