@@ -6,6 +6,8 @@ import 'package:miniproject/src/configs/app_setting.dart';
 import 'package:miniproject/src/widgets/menu_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+//หน้าโฮม หน้าหลัก
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
